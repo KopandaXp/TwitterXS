@@ -1,0 +1,19 @@
+<mvc:View
+ controllerName="sapTwitter.view.AppHeader"
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:l="sap.ui.layout"
+ xmlns:mvc="sap.ui.core.mvc"
+ height="100%"
+ >
+<!-- 	<Toolbar>
+		<Button text="currentMonth" press="onNavToPress"/>
+		<Button text="lastMonth" press="onNavToPress"/>
+		<Button text="goals" press="onNavToPress"/>
+		<Button text="imageTest" press="onNavToPress"/>
+		<Button text="adaptationOffice" press="onNavToPress"/>
+		<Button text="courses" press="onNavToPress"/>
+		<Button text="businessValuation" press="onNavToPress"/>
+		<Button text="developmentProgram" press="onNavToPress"/>
+	</Toolbar> -->
+</mvc:View>

@@ -1,0 +1,18 @@
+<mvc:View
+ controllerName="sapTwitter.view.HeaderOverview"
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:l="sap.ui.layout"
+ xmlns:mvc="sap.ui.core.mvc"
+ >
+ <!-- height="100%" -->
+	<Page
+	 showHeader="false"
+	 enableScrolling="false">
+		<l:FixFlex
+		 id="idHeaderOverviewPage"
+		 fixFirst="true"
+		 fixContentSize="0px">
+		</l:FixFlex>
+	</Page>
+</mvc:View>

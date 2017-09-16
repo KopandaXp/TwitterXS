@@ -1,0 +1,13 @@
+<mvc:View
+ controllerName="sapTwitter.view.NotFound"
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:l="sap.ui.layout"
+ xmlns:mvc="sap.ui.core.mvc"
+ height="100%">
+	<!-- <Page><Text text="404 Not Found."/></Page> -->
+	<MessagePage
+	 title="404 Not Found"
+	 text="{i18n>NotFound}"
+	 description="Page doesn't exist."/>
+</mvc:View>

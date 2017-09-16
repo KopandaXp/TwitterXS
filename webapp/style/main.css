@@ -1,0 +1,120 @@
+.header-background {
+	background-color: white;
+}
+
+.table-title {
+	color: rgb(143, 43, 55)!important;
+	font-size: 20px!important;
+}
+.navContainerControl,
+.sapMITB {
+	height: 100%;
+}
+
+.navContainerControlWrapper {
+	height: calc(100% - 200px);
+}
+
+.color-block .amount {
+	font-size: 20px;
+}
+.color-block .text {
+	font-size: 10px;
+	color: gray;
+}
+.color-block[data-border-color="red"] {
+	border-right: solid rgb(198, 122, 96) 3px;
+}
+.color-block[data-border-color="green"] {
+	border-right: solid rgb(98, 123, 102) 3px;
+}
+.color-block[data-border-color="yellow"] {
+	border-right: solid rgb(218, 190, 117) 3px;
+}
+.color-block[data-border-color="orange"] {
+	border-right: solid orange 3px;
+}
+.color-block[data-border-color="ltgreen"] {
+	border-right: solid lightgreen 3px;
+}
+.color-block[data-border-color="gray"] {
+	border-right: solid gray 3px;
+}
+
+.color-block[data-text-color="red"] .amount {
+	color: rgb(198, 122, 96);
+}
+.color-block[data-text-color="green"] .amount {
+	color: rgb(98, 123, 102);
+}
+.color-block[data-text-color="yellow"] .amount {
+	color: rgb(218, 190, 117);
+}
+.color-block[data-text-color="orange"] .amount {
+	color: orange;
+}
+.color-block[data-text-color="ltgreen"] .amount {
+	color: rgb(101, 215, 86);
+}
+.color-block[data-text-color="gray"] .amount {
+	color: gray;
+}
+
+.border-1px-gray {
+	border: 1px solid gray;
+}
+.bold {
+	font-weight: bold;
+}
+.padding-5px {
+	padding: 5px;
+}
+.margin-16px {
+	margin: 16px;
+}
+.horizontal-margin-16px {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.margin-5px {
+	margin: 5px!important;
+}
+.font-size-10px {
+	font-size: 10px!important;
+}
+.color-black {
+	color: black!important;
+}
+.color-gray {
+	color: gray!important;
+}
+
+.height-2rem {
+	height: 2rem!important;
+}
+.padding-left-2rem {
+	padding-left: 2rem!important;
+}
+
+/*Прячем шапки диаграмм*/
+.viz-hide-header .sapSuiteUiCommonsChartContainerToolBarArea {
+	display: none!important;
+}
+.flex-shrink-0 {
+	flex-shrink: 0!important;
+}
+.margin-right-1rem {
+	margin-right: 1rem;
+}
+.idCalcTable tr:last-child span,
+.idLastMonthTable tr:last-child span {
+	font-weight: bold;
+}
+.idbestSellerTable th span {
+	font-weight: bold!important;
+}
+
+.last-month-page .sapMPanelHdr,
+.last-month-page .sapMPanelContent {
+	padding-left: 0.5rem!important;
+}

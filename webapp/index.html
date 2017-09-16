@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+		<title></title>
+
+		<script
+		 id="sap-ui-bootstrap"
+		 src="https://sapui5.hana.ondemand.com/1.44.14/resources/sap-ui-core.js"
+		 data-sap-ui-libs="sap.m"
+		 data-sap-ui-theme="sap_belize"
+		 data-sap-ui-xx-bindingSyntax="complex"
+		 data-sap-ui-preload="async"
+		 data-sap-ui-compatVersion="edge"
+		 data-sap-ui-resourceroots='{
+			"sapTwitter": "./",
+			"fragment": "fragment",
+			"view": "view",
+			"util": "util",
+			"img": "img"
+		 }'>
+		 	// "ovtLib": "http://localhost:51712/ovtLib",
+		// "sap.ui.demo.mock": "mockdata",
+		// "data": "./data",
+		</script>
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				sap.ui.require(["sap/ui/core/ComponentContainer", "sap/m/Shell"],
+					function (ComponentContainer, Shell) {
+						new Shell({
+							app: new ComponentContainer({
+								name: "sapTwitter",
+								height: "100%"
+							})
+						}).placeAt("content");
+					}
+				);
+				// new sap.m.App ({
+				// 	pages: [
+				// 		new sap.m.Page({
+				// 			showHeader: false,
+				// 			enableScrolling : false,
+				// 			width: "100%",
+				// 			content: [ new sap.ui.core.ComponentContainer({
+				// 				height : "100%", name : "mvdCompCont"
+				// 			})]
+				// 		})
+				// 	]
+				// }).placeAt("content");
+			});
+
+		</script>
+		<!-- <style>
+			@import "./style/main.css" screen;
+		</style> -->
+	</head>
+
+	<!-- UI Content -->
+	<body class="sapUiBody">
+		<div id="content"></div>
+	</body>
+</html>

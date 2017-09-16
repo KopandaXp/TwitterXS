@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+ xmlns:core="sap.ui.core"
+ xmlns="sap.m"
+>
+	<VBox width="160px" height="65px" class="color-block sapUiTinyMarginEnd" justifyContent="SpaceBetween">
+		<Text text="{globalModel>Text}" class="text sapUiTinyMarginEnd"/>
+		<Label text="{globalModel>Amount}" class="amount sapUiTinyMarginEnd"/>
+		<customData>
+			<core:CustomData key="text-color" value="{globalModel>TextColor}" writeToDom="true"/>
+			<core:CustomData key="border-color" value="{globalModel>BorderColor}" writeToDom="true"/>
+		</customData>
+	</VBox>
+</core:FragmentDefinition>

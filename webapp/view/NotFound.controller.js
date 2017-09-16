@@ -1,0 +1,1 @@
+sap.ui.define(["sapTwitter/view/BaseController"], function(Controller) {"use strict";return Controller.extend("sapTwitter.view.NotFound", {})});
