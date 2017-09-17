@@ -1,5 +1,5 @@
 sap.ui.define([
-	"sapTwitter/view/BaseController"
+	"util/BaseController"
 ], function(
 	Controller
 ) {

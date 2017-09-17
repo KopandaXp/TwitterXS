@@ -1,28 +1,34 @@
 //**** Example for basic REQUEST RESPONSE handling
-var paramName; var paramValue; var headerName; var headerValue; var contentType;
+var contentType;
+var oHeader;
+var oParam;
+
 //Implementation of GET call
 function handleGet() {
 	// Retrieve data here and return results in JSON/other format 
 	$.response.status = $.net.http.OK;
-	 return {"myResult":" GET success"};
+	 return {"myResult": "GET success"};
 }
 //Implementation of POST call
 function handlePost() {
 	var bodyStr = $.request.body ? $.request.body.asString() : undefined;
-	if ( bodyStr === undefined ){
+	if (bodyStr === undefined) {
 		 $.response.status = $.net.http.INTERNAL_SERVER_ERROR;
-		 return {"myResult":"Missing BODY"};
+		 return {"myResult": "Missing BODY"};
 	}
 	// Extract body insert data to DB and return results in JSON/other format
 	$.response.status = $.net.http.CREATED;
-	return {"myResult":"POST success"};
+	return {"myResult": "POST success"};
 }
 // Check Content type headers and parameters
 function validateInput() {
-	var i; var j;
+	var i, j;
+	var paramName, paramValue;
+	var headerName, headerValue;
+	
 	// Check content-type is application/json
 	contentType = $.request.contentType;
-	if ( contentType === null || contentType.startsWith("application/json") === false){
+	if (contentType === null || contentType.startsWith("application/json") === false) {
 		 $.response.status = $.net.http.INTERNAL_SERVER_ERROR;
 		 $.response.setBody("Wrong content type request use application/json");
 		return false;
@@ -31,34 +37,36 @@ function validateInput() {
 	for (i = 0; i < $.request.parameters.length; ++i) {
 		paramName = $.request.parameters[i].name;
 		paramValue = $.request.parameters[i].value;
-//      Add logic
+		oParam[paramName] = paramValue;
 	}
 	// Extract headers and process them 
 	for (j = 0; j < $.request.headers.length; ++j) {
 		headerName = $.request.headers[j].name;
 		headerValue = $.request.headers[j].value;
-//      Add logic
-	 }
+		oHeader[headerName] = headerValue;
+	}
 	return true;
 }
 // Request process 
-function processRequest(){
-	if (validateInput()){
+function processRequest() {
+	if (validateInput()) {
 		try {
-			switch ( $.request.method ) {
+			switch ($.request.method) {
 				//Handle your GET calls here
 				case $.net.http.GET:
 					$.response.setBody(JSON.stringify(handleGet()));
-					break;
-					//Handle your POST calls here
+				break;
+
+				//Handle your POST calls here
 				case $.net.http.POST:
 					$.response.setBody(JSON.stringify(handlePost()));
-					break; 
+				break;
+
 				//Handle your other methods: PUT, DELETE
 				default:
 					$.response.status = $.net.http.METHOD_NOT_ALLOWED;
 					$.response.setBody("Wrong request method");
-					break;
+				break;
 			}
 			$.response.contentType = "application/json";
 		} catch (e) {
@@ -66,5 +74,5 @@ function processRequest(){
 		}
 	}
 }
-// Call request processing  
+// Call request processing
 processRequest();

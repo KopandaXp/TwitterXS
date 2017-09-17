@@ -1,5 +1,5 @@
 sap.ui.define([
-	"sapTwitter/view/BaseController",
+	"util/BaseController",
 	"sapTwitter/util/DataAccess",
 	"sap/m/MessageBox"
 ], function(

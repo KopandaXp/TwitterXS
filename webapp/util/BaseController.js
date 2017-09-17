@@ -4,7 +4,7 @@ sap.ui.define([
 	Controller
 ) {
 "use strict";
-var oController = Controller.extend("sapTwitter.view.BaseController", {
+var oController = Controller.extend("util.BaseController", {
 	
 });
 return oController;
