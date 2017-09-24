@@ -159,15 +159,15 @@ function processRequest() {
 // 			    dest.baseUrl,
 // 			    sURLParameters, 
 // 			    sMySecret, {
-			    
+				
 // 			});
 // 			var req = new $.web.WebRequest($.net.http.POST, sURLParameters);
 // 			client.request(req, dest);
 // 			var response = client.getResponse();
 			
 		var destination_package = "TwitterXS.webapp.xsjs";
-	    var destination_name = "dst_twitter_api";
-	    
+		var destination_name = "dst_twitter_api";
+		
 		var text = encodeURIComponent('test test test');
 		var epn1 = new Date().getTime();
 		var ep2 = epn1.toString();
