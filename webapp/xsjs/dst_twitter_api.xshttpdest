@@ -1,12 +1,12 @@
-// To define an HTTP destination, you can use the following code.
-
-host = "api.twitter.com";
-port = 80;  
 description = "twitter API destination";
-// useSSL = false;
-// pathPrefix = "/d/quotes.csv?f=a";
+host = "api.twitter.com";
+port = 443;
+pathPrefix = "/1.1/statuses/update.json";
+proxyType = http;
+proxyHost = "proxy-trial";
+proxyPort = 8080;
 authType = none;
-useProxy = false;
-proxyHost = "";
-proxyPort = 0;
-timeout = 0;
+useSSL = true;
+timeout = 30000;
+sslHostCheck = false;
+sslAuth = client;

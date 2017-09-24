@@ -1,0 +1,19 @@
+<mvc:View
+ controllerName="sapTwitter.view.Login"
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:l="sap.ui.layout"
+ xmlns:mvc="sap.ui.core.mvc"
+ height="100%">
+	<Page
+	 showHeader="false"
+	 width="100%">
+		<content>
+			<VBox>
+				<HBox>
+					<Button text="Login with Twitter" press="onPress"/>
+				</HBox>
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

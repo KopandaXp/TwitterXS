@@ -94,7 +94,7 @@
 					"pattern": "",
 					"target": [
 						"appHeader",
-						"myPage"
+						"Login"
 					]
 				}
 			],
@@ -110,6 +110,12 @@
 					"parent": "headerOverview",
 					"controlId": "idHeaderOverviewPage",
 					"controlAggregation": "fixContent"
+				},
+				"Login": {
+					"viewName": "Login",
+					"parent": "headerOverview",
+					"controlId": "idHeaderOverviewPage",
+					"controlAggregation": "flexContent"
 				},
 				"myPage": {
 					"viewName": "MyPage",
