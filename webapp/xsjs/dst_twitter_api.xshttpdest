@@ -1,7 +1,7 @@
 description = "twitter API destination";
 host = "api.twitter.com";
 port = 443;
-pathPrefix = "/1.1/statuses/update.json";
+pathPrefix = "";
 proxyType = http;
 proxyHost = "proxy-trial";
 proxyPort = 8080;
